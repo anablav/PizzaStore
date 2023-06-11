@@ -1,0 +1,1139 @@
+{
+    "_id": "st-18ef24a2-c58e-5d8c-bbd0-b1c7e651121e",
+    "refId": "2baf8dd1-c446-5abd-8b1b-4c5daf5294a0",
+    "notifyUserViaEmail": true,
+    "purpose": "customer",
+    "hasUserEndpoint": false,
+    "offKoraConfirmation": false,
+    "skipMakeEditLinks": false,
+    "type": "default",
+    "variables": [],
+    "showInMp": false,
+    "defaultLanguage": "en",
+    "supportedLanguages": [
+        "en"
+    ],
+    "languagePreferences": {
+        "type": "lifeTime"
+    },
+    "strict_pii": false,
+    "channels": [],
+    "color": "#009dab",
+    "sBannerColor": "#009dab",
+    "bBannerColor": "#009dab",
+    "categoryIds": [
+        "451902a073c071463e2fe7f6"
+    ],
+    "class": [],
+    "featured": false,
+    "sendVcf": false,
+    "isNLEnabled": true,
+    "interruptsEnabled": true,
+    "languagesToBeIgnored": [],
+    "localeData": {
+        "en": {
+            "name": "Pizza store",
+            "errorCodes": {
+                "pollError": []
+            },
+            "description": "Pizza store",
+            "nlMeta": {
+                "patterns": 0,
+                "synonyms": 96,
+                "mlUtterances": 0
+            },
+            "keywords": [],
+            "synonyms": {
+                "create": [
+                    "new",
+                    "add",
+                    "assemble",
+                    "build",
+                    "compose",
+                    "construct",
+                    "contrive",
+                    "create",
+                    "design",
+                    "generate",
+                    "instantiate",
+                    "invent",
+                    "make",
+                    "manufacture",
+                    "produce",
+                    "synthesize",
+                    "synthetise",
+                    "synthetize",
+                    "write"
+                ],
+                "alter": [
+                    "adjust",
+                    "alter",
+                    "amend",
+                    "renovate",
+                    "revise",
+                    "modify",
+                    "revamp",
+                    "reshape",
+                    "reconstruct",
+                    "recast",
+                    "change",
+                    "update"
+                ],
+                "add": [
+                    "insert",
+                    "append",
+                    "attach",
+                    "add"
+                ],
+                "delete": [
+                    "abolish",
+                    "annihilate",
+                    "delete",
+                    "demolish",
+                    "destroy",
+                    "efface",
+                    "erase",
+                    "eliminate",
+                    "obliterate"
+                ],
+                "get": [
+                    "find",
+                    "garner",
+                    "gather",
+                    "get",
+                    "grab",
+                    "obtain",
+                    "retrieve",
+                    "show",
+                    "display",
+                    "give"
+                ],
+                "list": [
+                    "enumerate",
+                    "list",
+                    "name",
+                    "tell"
+                ],
+                "comment": [
+                    "comment",
+                    "annotate",
+                    "describe"
+                ],
+                "pick": [
+                    "choose",
+                    "decide",
+                    "handpick",
+                    "pick",
+                    "prefer",
+                    "recommend",
+                    "select",
+                    "suggest"
+                ],
+                "request": [
+                    "ask",
+                    "request"
+                ],
+                "post": [
+                    "post",
+                    "put",
+                    "place",
+                    "submit"
+                ],
+                "top": [
+                    "top",
+                    "valuable",
+                    "best",
+                    "foremost",
+                    "peak"
+                ],
+                "recent": [
+                    "recent",
+                    "new"
+                ],
+                "customer": [
+                    "customer",
+                    "client",
+                    "user"
+                ],
+                "info": [
+                    "detail",
+                    "specific",
+                    "information",
+                    "info"
+                ],
+                "rank": [
+                    "rating",
+                    "rate",
+                    "rank"
+                ],
+                "item": [
+                    "stock",
+                    "inventory",
+                    "item",
+                    "product"
+                ]
+            },
+            "confidenceConfigs": [
+                {
+                    "mode": "ml",
+                    "minThreshold": 0.3,
+                    "maxThreshold": 80,
+                    "isActive": true,
+                    "exactMatchThreshold": 95
+                },
+                {
+                    "mode": "faq",
+                    "minThreshold": 60,
+                    "maxThreshold": 80,
+                    "isActive": true,
+                    "taskMatchTolerance": 5,
+                    "exactMatchThreshold": 95,
+                    "suggestionsCount": 3,
+                    "pathCoverage": 50,
+                    "longResponses": {
+                        "readMore": true
+                    }
+                },
+                {
+                    "mode": "cs",
+                    "minThreshold": 60,
+                    "maxThreshold": 80,
+                    "isActive": true,
+                    "taskMatchTolerance": 2,
+                    "wordCoverage": 60
+                }
+            ]
+        }
+    },
+    "interruptOptions": {
+        "interruptsEnabled": true,
+        "numTasksToHold": "1",
+        "type": {
+            "option": "developer",
+            "message": ""
+        },
+        "holdUxOptions": {
+            "option": "discardCurrTaskNoNotify",
+            "message": ""
+        },
+        "faqBehaviour": "respondAndResume",
+        "showAmbiguous": true
+    },
+    "detectMultiIntent": false,
+    "enableNegativePatterns": false,
+    "isCsMatchEnabled": false,
+    "botSentimentEvents": [],
+    "botEvents": {
+        "TASK_FAILURE_EVENT": {
+            "enabled": true,
+            "action": "showMsg",
+            "task": null,
+            "script": ".",
+            "msg": [
+                {
+                    "localeData": {
+                        "en": {
+                            "type": "basic",
+                            "text": "I%20am%20sorry%2C%20something%20went%20wrong%20and%20I%20had%20to%20discard%20your%20task.%20Please%20retry."
+                        }
+                    },
+                    "createdBy": "u-f883fc99-1c66-595e-a935-50c78ecc05e8",
+                    "createdOn": "Wed Jun 19 2019 09:28:12 GMT+0000 (Coordinated Universal Time)",
+                    "streamId": "st-18ef24a2-c58e-5d8c-bbd0-b1c7e651121e",
+                    "channel": "default",
+                    "lModBy": "Wed Jun 19 2019 09:28:12 GMT+0000 (Coordinated Universal Time)",
+                    "lMod": "Wed Jun 19 2019 09:28:12 GMT+0000 (Coordinated Universal Time)",
+                    "__v": 0
+                }
+            ],
+            "welcomeIvrOptions": []
+        }
+    },
+    "actions": [],
+    "alerts": [],
+    "dialogs": [
+        {
+            "_id": "dg-c39cd302-bff1-56b6-951e-35976efddbab",
+            "refId": "de203638-76e1-5b0a-9f74-1198d59462f4",
+            "nodes": [
+                {
+                    "nodeOptions": {
+                        "customTags": {
+                            "session": [],
+                            "message": [],
+                            "user": []
+                        },
+                        "transitionType": "auto",
+                        "promptOptions": "required",
+                        "reuseMarkedupPhrases": false,
+                        "interruptOptions": {
+                            "priority": "task"
+                        },
+                        "transitionMode": "initiateCurrentTask",
+                        "inputHandlingOptions": "useAsEntityValue",
+                        "reuseOptions": "1",
+                        "noAutoCorrection": false,
+                        "notForReuse": false,
+                        "contextTags": [],
+                        "message": [],
+                        "errorMessage": []
+                    },
+                    "nodeId": "intent0",
+                    "type": "intent",
+                    "componentId": "dc-c6462581-2765-50db-94a1-c57619500fce",
+                    "transitions": [
+                        {
+                            "default": "entity1",
+                            "metadata": {
+                                "color": "#299d8e",
+                                "connId": "dummy0"
+                            }
+                        }
+                    ],
+                    "metadata": {
+                        "left": 30,
+                        "top": 170
+                    }
+                },
+                {
+                    "nodeOptions": {
+                        "customTags": {
+                            "session": [],
+                            "message": [],
+                            "user": []
+                        },
+                        "transitionType": "auto",
+                        "promptOptions": "required",
+                        "reuseMarkedupPhrases": false,
+                        "interruptOptions": {
+                            "interruptsEnabled": true,
+                            "priority": "task"
+                        },
+                        "transitionMode": "initiateCurrentTask",
+                        "inputHandlingOptions": "useAsEntityValue",
+                        "reuseOptions": "1",
+                        "noAutoCorrection": false,
+                        "notForReuse": false,
+                        "contextTags": [],
+                        "precedence": "entityOverIntent"
+                    },
+                    "nodeId": "entity1",
+                    "type": "entity",
+                    "componentId": "dc-00bbbe54-779a-5aa6-a416-199c46553a3c",
+                    "transitions": [
+                        {
+                            "default": "entity2",
+                            "metadata": {
+                                "color": "#299d8e",
+                                "connId": "dummy1"
+                            }
+                        }
+                    ],
+                    "metadata": {
+                        "left": 333,
+                        "top": 167
+                    }
+                },
+                {
+                    "nodeOptions": {
+                        "customTags": {
+                            "session": [],
+                            "message": [],
+                            "user": []
+                        },
+                        "transitionType": "auto",
+                        "promptOptions": "required",
+                        "reuseMarkedupPhrases": false,
+                        "interruptOptions": {
+                            "interruptsEnabled": true,
+                            "priority": "task"
+                        },
+                        "transitionMode": "initiateCurrentTask",
+                        "inputHandlingOptions": "useAsEntityValue",
+                        "reuseOptions": "1",
+                        "noAutoCorrection": false,
+                        "notForReuse": false,
+                        "contextTags": [],
+                        "precedence": "entityOverIntent"
+                    },
+                    "nodeId": "entity2",
+                    "type": "entity",
+                    "componentId": "dc-3d173ee0-a401-5e36-80a5-916a9b6c8c68",
+                    "transitions": [
+                        {
+                            "default": "script3",
+                            "metadata": {
+                                "color": "#299d8e",
+                                "connId": "dummy3"
+                            }
+                        }
+                    ],
+                    "metadata": {
+                        "left": 634,
+                        "top": 170
+                    }
+                },
+                {
+                    "nodeOptions": {
+                        "customTags": {
+                            "session": [],
+                            "message": [],
+                            "user": []
+                        },
+                        "transitionType": "auto",
+                        "promptOptions": "required",
+                        "reuseMarkedupPhrases": false,
+                        "interruptOptions": {
+                            "priority": "task"
+                        },
+                        "transitionMode": "initiateCurrentTask",
+                        "inputHandlingOptions": "useAsEntityValue",
+                        "reuseOptions": "1",
+                        "noAutoCorrection": false,
+                        "notForReuse": false,
+                        "contextTags": [],
+                        "message": [],
+                        "errorMessage": []
+                    },
+                    "nodeId": "script3",
+                    "type": "script",
+                    "componentId": "dc-70139d80-7067-55fa-aad0-98fbaabf1c2a",
+                    "transitions": [
+                        {
+                            "if": {
+                                "field": "entity2"
+                            },
+                            "then": "entity4",
+                            "metadata": {
+                                "color": "#299d8e",
+                                "connId": "dummy6"
+                            }
+                        },
+                        {
+                            "default": "entity2",
+                            "metadata": {
+                                "color": "#299d8e",
+                                "connId": "dummy3"
+                            }
+                        }
+                    ],
+                    "metadata": {
+                        "left": 995,
+                        "top": 87
+                    }
+                },
+                {
+                    "nodeOptions": {
+                        "customTags": {
+                            "session": [],
+                            "message": [],
+                            "user": []
+                        },
+                        "transitionType": "auto",
+                        "promptOptions": "required",
+                        "reuseMarkedupPhrases": false,
+                        "interruptOptions": {
+                            "priority": "task",
+                            "type": {
+                                "option": "doNotAllowHoldResume"
+                            }
+                        },
+                        "transitionMode": "initiateCurrentTask",
+                        "inputHandlingOptions": "useAsEntityValue",
+                        "reuseOptions": "1",
+                        "noAutoCorrection": false,
+                        "notForReuse": false,
+                        "contextTags": [],
+                        "precedence": "entityOverIntent",
+                        "arraySize": 10,
+                        "message": [],
+                        "errorMessage": []
+                    },
+                    "nodeId": "entity4",
+                    "type": "entity",
+                    "componentId": "dc-2e4c89bc-2b49-57b5-ac3a-76626b0d0cae",
+                    "transitions": [
+                        {
+                            "default": "message10",
+                            "metadata": {
+                                "color": "#299d8e",
+                                "connId": "dummy5"
+                            }
+                        }
+                    ],
+                    "metadata": {
+                        "left": 726,
+                        "top": 372
+                    }
+                },
+                {
+                    "nodeOptions": {
+                        "customTags": {
+                            "session": [],
+                            "message": [],
+                            "user": []
+                        },
+                        "transitionType": "auto",
+                        "promptOptions": "required",
+                        "reuseMarkedupPhrases": false,
+                        "interruptOptions": {
+                            "interruptsEnabled": true,
+                            "priority": "task"
+                        },
+                        "transitionMode": "initiateCurrentTask",
+                        "inputHandlingOptions": "useAsEntityValue",
+                        "reuseOptions": "1",
+                        "noAutoCorrection": false,
+                        "notForReuse": false,
+                        "contextTags": [],
+                        "precedence": "entityOverIntent",
+                        "message": [],
+                        "errorMessage": []
+                    },
+                    "nodeId": "entity6",
+                    "type": "entity",
+                    "componentId": "dc-abf3537c-274f-553e-9116-9dd8713f2831",
+                    "transitions": [
+                        {
+                            "default": "end",
+                            "metadata": {
+                                "color": "#299d8e",
+                                "connId": "dummy9"
+                            }
+                        }
+                    ],
+                    "metadata": {
+                        "left": 303,
+                        "top": 615
+                    }
+                },
+                {
+                    "nodeOptions": {
+                        "customTags": {
+                            "session": [],
+                            "message": [],
+                            "user": []
+                        },
+                        "transitionType": "auto",
+                        "promptOptions": "required",
+                        "reuseMarkedupPhrases": false,
+                        "interruptOptions": {
+                            "interruptsEnabled": true,
+                            "priority": "task"
+                        },
+                        "transitionMode": "initiateCurrentTask",
+                        "inputHandlingOptions": "useAsEntityValue",
+                        "reuseOptions": "1",
+                        "noAutoCorrection": false,
+                        "notForReuse": false,
+                        "contextTags": [],
+                        "precedence": "entityOverIntent",
+                        "message": [],
+                        "errorMessage": []
+                    },
+                    "nodeId": "entity7",
+                    "type": "entity",
+                    "componentId": "dc-97358dad-ff4a-577e-ad64-5ef70de9490c",
+                    "transitions": [
+                        {
+                            "default": "end",
+                            "metadata": {
+                                "color": "#299d8e",
+                                "connId": "dummy11"
+                            }
+                        }
+                    ],
+                    "metadata": {
+                        "left": 31,
+                        "top": 616
+                    }
+                },
+                {
+                    "nodeOptions": {
+                        "customTags": {
+                            "session": [],
+                            "message": [],
+                            "user": []
+                        },
+                        "transitionType": "auto",
+                        "promptOptions": "required",
+                        "reuseMarkedupPhrases": false,
+                        "interruptOptions": {
+                            "priority": "task",
+                            "type": {
+                                "option": "doNotAllowHoldResume"
+                            }
+                        },
+                        "transitionMode": "initiateCurrentTask",
+                        "inputHandlingOptions": "useAsEntityValue",
+                        "reuseOptions": "1",
+                        "noAutoCorrection": false,
+                        "notForReuse": false,
+                        "contextTags": [],
+                        "message": [],
+                        "errorMessage": []
+                    },
+                    "nodeId": "message10",
+                    "type": "message",
+                    "componentId": "dc-8841a917-fb4c-5933-ad63-30b2fcd6db0d",
+                    "transitions": [
+                        {
+                            "default": "end",
+                            "metadata": {
+                                "color": "#299d8e",
+                                "connId": "dummy23"
+                            }
+                        }
+                    ],
+                    "metadata": {
+                        "left": 1152,
+                        "top": 440
+                    }
+                }
+            ],
+            "lname": "order a pizza",
+            "isHidden": false,
+            "localeData": {
+                "en": {
+                    "name": "Order a Pizza",
+                    "shortDesc": ""
+                }
+            },
+            "isFollowUp": false,
+            "interruptOptions": {
+                "priority": "bot"
+            },
+            "contextLifeTime": {
+                "options": "close"
+            },
+            "amendConfig": {
+                "priority": "bot"
+            }
+        }
+    ],
+    "dialogComponents": [
+        {
+            "_id": "dc-00bbbe54-779a-5aa6-a416-199c46553a3c",
+            "refId": "3398711a-7564-51f2-a1cf-8a0e68690338",
+            "name": "crust",
+            "serviceNodeType": "custom",
+            "type": "entity",
+            "entityType": "list_of_values",
+            "message": [
+                {
+                    "channel": "default",
+                    "localeData": {
+                        "en": {
+                            "text": "please%20tell%20me%20your%20choice%20of%20crust",
+                            "type": "basic"
+                        }
+                    }
+                }
+            ],
+            "errorMessage": [
+                {
+                    "channel": "default",
+                    "localeData": {
+                        "en": {
+                            "text": "I'm%20sorry%2C%20I%20did%20not%20know%20of%20the%20type%20of%20crest%20you%20wanted.%20Please%20select%20a%20value%20from%20the%20list.",
+                            "type": "basic"
+                        }
+                    }
+                }
+            ],
+            "applyDefaultTemplate": true,
+            "localeData": {
+                "en": {
+                    "label": "choice of crust",
+                    "allowedValues": {
+                        "values": [
+                            {
+                                "title": "Hand Tossed",
+                                "value": "hand tossed",
+                                "synonyms": [
+                                    "hand tossed"
+                                ]
+                            },
+                            {
+                                "title": "Fresh Pan",
+                                "value": "Fresh Pan",
+                                "synonyms": [
+                                    "Fresh Pan"
+                                ]
+                            },
+                            {
+                                "title": "Cheese burst",
+                                "value": "Cheese burst",
+                                "synonyms": [
+                                    "Cheese burst"
+                                ]
+                            }
+                        ]
+                    }
+                }
+            },
+            "entityFields": {
+                "cityAdvanced": []
+            },
+            "preConditions": []
+        },
+        {
+            "_id": "dc-2e4c89bc-2b49-57b5-ac3a-76626b0d0cae",
+            "refId": "1dc6957c-2dfd-5674-881b-91ea89e23ca7",
+            "name": "sides",
+            "serviceNodeType": "custom",
+            "type": "entity",
+            "entityType": "composite",
+            "message": [
+                {
+                    "channel": "default",
+                    "localeData": {
+                        "en": {
+                            "text": "Whats%20you%20choice%20of%20sides%20%3F%0A*%20Coke%0A*%20Sprite%0A*%20Chicken%20wings",
+                            "type": "basic"
+                        }
+                    }
+                },
+                {
+                    "channel": "rtm",
+                    "localeData": {
+                        "en": {
+                            "text": "var%20elements%20%3D%20%5B%0A%20%20%20%20%7Bname%3A%20%22Coke%22%2C%20status%3A%20%22Available%22%7D%2C%0A%20%20%20%20%7Bname%3A%20%22Sprite%22%2C%20status%3A%20%22Available%22%7D%2C%0A%20%20%20%20%7Bname%3A%20%22Potato%20Wedges%22%2C%20status%3A%20%22Available%22%7D%0A%5D%3B%0Avar%20message%20%3D%20%7B%0A%20%20%20%20%22type%22%3A%20%22template%22%2C%0A%20%20%20%20%22payload%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%22template_type%22%3A%20%22table%22%2C%0A%20%20%20%20%20%20%20%20%22text%22%3A%20%22Available%20Sides%22%2C%0A%20%20%20%20%20%20%20%20%22columns%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%5B%22Name%22%5D%2C%20%5B%22status%22%2C%20%22right%22%5D%0A%20%20%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%20%20%22table_design%22%3A%20%22regular%22%2C%0A%20%20%20%20%20%20%20%20speech_hint%3A%20%22Available%20sides%22%2C%0A%20%20%20%20%20%20%20%20elements%3A%20%5B%5D%0A%20%20%20%20%7D%0A%7D%3B%0Avar%20ele%20%3D%20%5B%5D%3B%0Afor%20(var%20i%20%3D%200%3B%20i%20%3C%20elements.length%3B%20i%2B%2B)%20%7B%0A%20%20%20%20var%20elementArr%20%3D%20%5Belements%5Bi%5D.name%2C%20elements%5Bi%5D.status%5D%3B%0A%20%20%20%20ele.push(%7B'Values'%3A%20elementArr%7D)%3B%0A%7D%0Amessage.payload.elements%20%3D%20ele%3B%0Aprint(JSON.stringify(message))%3B",
+                            "type": "uxmap"
+                        }
+                    }
+                }
+            ],
+            "errorMessage": [
+                {
+                    "channel": "default",
+                    "localeData": {
+                        "en": {
+                            "text": "I'm sorry, I did not recognize the value you have entered. Please enter again.",
+                            "type": "basic"
+                        }
+                    }
+                }
+            ],
+            "isArray": true,
+            "applyDefaultTemplate": false,
+            "localeData": {
+                "en": {
+                    "label": "choice of sides",
+                    "patterns": [],
+                    "compositePatterns": [
+                        {
+                            "value": "@count @side",
+                            "original": "@count @side"
+                        }
+                    ]
+                }
+            },
+            "entityFields": {
+                "cityAdvanced": []
+            },
+            "preConditions": []
+        },
+        {
+            "_id": "dc-3d173ee0-a401-5e36-80a5-916a9b6c8c68",
+            "refId": "5e345cf1-241d-5c09-9ca8-ae10b4a7ca9a",
+            "name": "Toppings",
+            "serviceNodeType": "custom",
+            "type": "entity",
+            "entityType": "list_of_values",
+            "message": [
+                {
+                    "channel": "default",
+                    "localeData": {
+                        "en": {
+                            "text": "please%20select%20up%20to%20three%20toppings%0A1.%20Onion%0A2.%20Tomato%0A2.%20Mushroom%0A3.%20Pepperoni%0A4.%20Chicken",
+                            "type": "basic"
+                        }
+                    }
+                },
+                {
+                    "channel": "rtm",
+                    "localeData": {
+                        "en": {
+                            "text": "var%20elements%20%3D%20%5B%0A%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%22primary%22%3A%20%5B%5B%22Topping%22%5D%2C%20%5B%22Cost%22%2C%20%22right%22%5D%5D%2C%0A%20%20%20%20%20%20%20%20%22additional%22%3A%20%5B%5B%22Onion%22%2C%20%22%245%22%5D%2C%20%5B%22Tomato%22%2C%20%22%245%22%5D%2C%20%5B%22Mushroom%22%2C%20%22%245%22%5D%2C%20%5B%22Pepperoni%22%2C%20%22%2410%22%5D%2C%20%5B%22Chicken%22%2C%20%22%2410%22%5D%5D%0A%20%20%20%20%7D%0A%5D%3B%0Avar%20message%20%3D%20%7B%0A%20%20%20%20%22type%22%3A%20%22template%22%2C%0A%20%20%20%20%22payload%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%22template_type%22%3A%20%22mini_table%22%2C%0A%20%20%20%20%20%20%20%20%22layout%22%3A%20%22horizontal%22%2C%0A%20%20%20%20%20%20%20%20%22text%22%3A%20%22Available%20Toppings%2C%20select%20upto%203%22%2C%0A%20%20%20%20%20%20%20%20speech_hint%3A%20%22Here%20are%20the%20available%20toppings%22%2C%0A%20%20%20%20%20%20%20%20elements%3A%20%5B%5D%0A%20%20%20%20%7D%0A%7D%3B%0Avar%20ele%20%3D%20%5B%5D%3B%0Afor%20(var%20i%20%3D%200%3B%20i%20%3C%20elements.length%3B%20i%2B%2B)%20%7B%0A%20%20%20%20ele.push(%7B'primary'%3A%20elements%5Bi%5D.primary%2C%20'additional'%3A%20elements%5Bi%5D.additional%7D)%3B%0A%7D%0Amessage.payload.elements%20%3D%20ele%3B%0Aprint(JSON.stringify(message))%3B%0A",
+                            "type": "uxmap"
+                        }
+                    }
+                }
+            ],
+            "errorMessage": [
+                {
+                    "channel": "default",
+                    "localeData": {
+                        "en": {
+                            "text": "I'm sorry, I did not recognize the value you have entered. Please select a value from the list.",
+                            "type": "basic"
+                        }
+                    }
+                }
+            ],
+            "isArray": true,
+            "applyDefaultTemplate": false,
+            "localeData": {
+                "en": {
+                    "label": "choice pizza toppings",
+                    "allowedValues": {
+                        "values": [
+                            {
+                                "title": "Onion",
+                                "value": "onions",
+                                "synonyms": [
+                                    "onions"
+                                ]
+                            },
+                            {
+                                "title": "Tomato",
+                                "value": "tomato",
+                                "synonyms": [
+                                    "tomato"
+                                ]
+                            },
+                            {
+                                "title": "Mushroom",
+                                "value": "Mushroom",
+                                "synonyms": [
+                                    "Mushroom"
+                                ]
+                            },
+                            {
+                                "title": "Pepperoni",
+                                "value": "Pepperoni",
+                                "synonyms": [
+                                    "Pepperoni"
+                                ]
+                            },
+                            {
+                                "title": "Chicken",
+                                "value": "Chicken",
+                                "synonyms": [
+                                    "Chicken"
+                                ]
+                            }
+                        ]
+                    }
+                }
+            },
+            "entityFields": {
+                "cityAdvanced": []
+            },
+            "preConditions": []
+        },
+        {
+            "_id": "dc-70139d80-7067-55fa-aad0-98fbaabf1c2a",
+            "refId": "ab2c9398-d541-58ee-9b2b-51cd30381756",
+            "name": "ValidateToppingsCount",
+            "script": "if(context.entities.Toppings.length%20%3E%203)%7B%0A%20%20%20%20delete%20context.entities.Toppings%3B%0A%7D",
+            "serviceNodeType": "custom",
+            "type": "script",
+            "applyDefaultTemplate": false,
+            "localeData": {
+                "en": {
+                    "label": "Validate toppings count"
+                }
+            },
+            "entityFields": {
+                "cityAdvanced": []
+            },
+            "preConditions": []
+        },
+        {
+            "_id": "dc-8841a917-fb4c-5933-ad63-30b2fcd6db0d",
+            "refId": "f690aff3-f5fa-5b8a-b4c0-4aa9e48094c3",
+            "name": "orderplaced",
+            "serviceNodeType": "custom",
+            "type": "message",
+            "message": [
+                {
+                    "channel": "facebook",
+                    "localeData": {
+                        "en": {
+                            "text": "Your%20order%20has%20been%20placed.",
+                            "type": "basic"
+                        }
+                    }
+                },
+                {
+                    "channel": "default",
+                    "localeData": {
+                        "en": {
+                            "text": "your%20order%20has%20been%20placed%2C%20You%20order%20will%20be%20ready%20for%20pickup%20in%2010%20Minutes.",
+                            "type": "basic"
+                        }
+                    }
+                },
+                {
+                    "channel": "rtm",
+                    "localeData": {
+                        "en": {
+                            "text": "context.refId%20%20%3D%20%22%23%22%20%2B%20String(Math.floor(1000%20%2B%20Math.random()%20*%209000))%3B%0A%0A%0A%20%0A%0Avar%20elements%20%3D%20%5B%0A%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%22primary%22%3A%20%5B%5B%22Items%22%5D%2C%20%5B%22count%22%2C%20%22right%22%5D%5D%2C%0A%20%20%20%20%20%20%20%20%22additional%22%3A%20%5B%5Bcontext.entities.crust%2C%201%5D%2C%5D%0A%20%20%20%20%7D%0A%5D%3B%0Afor%20(var%20t%20in%20context.entities.Toppings)%7B%0A%20%20%20%20elements%5B0%5D%5B%22additional%22%5D.push(%5Bcontext.entities.Toppings%5Bt%5D%2C1%5D)%3B%0A%7D%0A%0Afor%20(var%20s%20in%20context.entities.sides)%7B%0A%20%20%20%20elements%5B0%5D%5B%22additional%22%5D.push(%5Bcontext.entities.sides%5Bs%5D%5B%22side%22%5D%2C%20context.entities.sides%5Bs%5D%5B%22count%22%5D%5D)%3B%0A%7D%0ABotUserSession.put(%22Order%22%2C%20context.refId%2C%201)%3B%0Avar%20message%20%3D%20%7B%0A%20%20%20%20%22type%22%3A%20%22template%22%2C%0A%20%20%20%20%22payload%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%22template_type%22%3A%20%22mini_table%22%2C%0A%20%20%20%20%20%20%20%20%22layout%22%3A%20%22horizontal%22%2C%0A%20%20%20%20%20%20%20%20%22text%22%3A%20%22Your%20Order%20with%20reference%20Id%20%22%20%2Bcontext.refId%2B%20%22%20is%20being%20prepared.%20Please%20collect%20your%20order%20at%20our%20store%20in%2030%20min.%20You%20can%20also%20check%20status%20with%20the%20reference%20Id%22%2C%0A%20%20%20%20%20%20%20%20speech_hint%3A%20%22Here%20is%20your%20account%20details%22%2C%0A%20%20%20%20%20%20%20%20elements%3A%20%5B%5D%0A%20%20%20%20%7D%0A%7D%3B%0Avar%20ele%20%3D%20%5B%5D%3B%0Afor%20(var%20i%20%3D%200%3B%20i%20%3C%20elements.length%3B%20i%2B%2B)%20%7B%0A%20%20%20%20ele.push(%7B'primary'%3A%20elements%5Bi%5D.primary%2C%20'additional'%3A%20elements%5Bi%5D.additional%7D)%3B%0A%7D%0Amessage.payload.elements%20%3D%20ele%3B%0Aprint(JSON.stringify(message))%3B%0A",
+                            "type": "uxmap"
+                        }
+                    }
+                }
+            ],
+            "applyDefaultTemplate": false,
+            "localeData": {
+                "en": {
+                    "label": "order placed"
+                }
+            },
+            "entityFields": {
+                "cityAdvanced": []
+            },
+            "preConditions": []
+        },
+        {
+            "_id": "dc-97358dad-ff4a-577e-ad64-5ef70de9490c",
+            "refId": "18636472-4c15-52bc-8545-5010632df666",
+            "name": "side",
+            "serviceNodeType": "custom",
+            "type": "entity",
+            "entityType": "list_of_values",
+            "message": [
+                {
+                    "channel": "default",
+                    "localeData": {
+                        "en": {
+                            "text": "Sample prompt message for Entity0001",
+                            "type": "basic"
+                        }
+                    }
+                }
+            ],
+            "errorMessage": [
+                {
+                    "channel": "default",
+                    "localeData": {
+                        "en": {
+                            "text": "I'm sorry, I did not recognize the value you have entered. Please select a value from the list.",
+                            "type": "basic"
+                        }
+                    }
+                }
+            ],
+            "applyDefaultTemplate": false,
+            "localeData": {
+                "en": {
+                    "label": "side",
+                    "allowedValues": {
+                        "values": [
+                            {
+                                "title": "coke",
+                                "value": "coke",
+                                "synonyms": [
+                                    "coke"
+                                ]
+                            },
+                            {
+                                "title": "sprite",
+                                "value": "sprite",
+                                "synonyms": [
+                                    "sprite"
+                                ]
+                            },
+                            {
+                                "title": "Potato Wedges",
+                                "value": "Potato Wedges",
+                                "synonyms": [
+                                    "Potato Wedges"
+                                ]
+                            }
+                        ]
+                    }
+                }
+            },
+            "entityFields": {
+                "cityAdvanced": []
+            },
+            "preConditions": []
+        },
+        {
+            "_id": "dc-abf3537c-274f-553e-9116-9dd8713f2831",
+            "refId": "105c2c94-5f64-5201-aa94-060c24edd179",
+            "name": "count",
+            "serviceNodeType": "custom",
+            "type": "entity",
+            "entityType": "number",
+            "message": [
+                {
+                    "channel": "default",
+                    "localeData": {
+                        "en": {
+                            "text": "Sample prompt message for Entity0001",
+                            "type": "basic"
+                        }
+                    }
+                }
+            ],
+            "errorMessage": [
+                {
+                    "channel": "default",
+                    "localeData": {
+                        "en": {
+                            "text": "I'm sorry, I did not recognize the number you entered. Please enter a number again. ",
+                            "type": "basic"
+                        }
+                    }
+                }
+            ],
+            "applyDefaultTemplate": false,
+            "localeData": {
+                "en": {
+                    "label": "count"
+                }
+            },
+            "entityFields": {
+                "cityAdvanced": []
+            },
+            "preConditions": []
+        },
+        {
+            "_id": "dc-c6462581-2765-50db-94a1-c57619500fce",
+            "refId": "901f8d0e-8be2-5cab-be2e-9d67b954d5a3",
+            "name": "Order_a_Pizza",
+            "serviceNodeType": "custom",
+            "type": "intent",
+            "applyDefaultTemplate": false,
+            "dialogId": "dg-c39cd302-bff1-56b6-951e-35976efddbab",
+            "localeData": {
+                "en": {
+                    "desc": "",
+                    "intent": "Order a Pizza"
+                }
+            },
+            "entityFields": {
+                "cityAdvanced": []
+            },
+            "preConditions": []
+        },
+        {
+            "_id": "dc-ed9465b2-c0e2-5d7a-8005-70a9ebcb0188",
+            "refId": "32fa8fb1-5a5a-582d-a268-e0b7c856b530",
+            "name": "Service0001",
+            "endPoint": {
+                "host": "mypizzastore.com",
+                "port": "",
+                "path": "/order",
+                "protocol": "http",
+                "method": "get",
+                "connectorEnabled": false,
+                "piiDataEnabled": false
+            },
+            "authRequired": false,
+            "payload": {
+                "type": "raw",
+                "value": "%5Bobject%20Object%5D"
+            },
+            "headers": {
+                "type": "raw",
+                "value": "{\"content-type\":\"application/json\"}"
+            },
+            "serviceType": "rest",
+            "idp": "none",
+            "serviceNodeType": "custom",
+            "type": "service",
+            "sampleResponse": [
+                {
+                    "name": "sampleResponse",
+                    "isDefault": true,
+                    "response": "{\"statusCode\":200,\"headers\":{\"set-cookie\":[\"__cfduid=d658d87521fa31c4bf988fd33089bd8801561025445; expires=Fri, 19-Jun-20 10:10:45 GMT; path=/; domain=.mypizzastore.com; HttpOnly\"],\"x-powered-by\":\"PHP/5.4.16\",\"server\":\"KoreOps\",\"cf-ray\":\"4e9cf468a829cf38-IAD\",\"connection\":\"close\"}}"
+                }
+            ],
+            "applyDefaultTemplate": false,
+            "localeData": {
+                "en": {
+                    "label": "Service0001"
+                }
+            },
+            "entityFields": {
+                "cityAdvanced": []
+            },
+            "serviceAPITimeout": 10,
+            "preConditions": []
+        },
+        {
+            "_id": "dc-e668db01-4362-533e-9a07-5500799be7ca",
+            "refId": "2bf434f7-bccd-5e83-8268-c2767c55916a",
+            "name": "Confirmation0001",
+            "serviceNodeType": "custom",
+            "type": "dialogAct",
+            "message": [
+                {
+                    "channel": "default",
+                    "localeData": {
+                        "en": {
+                            "text": "Sample prompt message for Confirmation0001",
+                            "type": "basic"
+                        }
+                    }
+                }
+            ],
+            "applyDefaultTemplate": false,
+            "localeData": {
+                "en": {
+                    "label": "Confirmation0001"
+                }
+            },
+            "entityFields": {
+                "cityAdvanced": []
+            },
+            "preConditions": []
+        }
+    ],
+    "knowledgeTasks": [],
+    "paramMaps": [],
+    "taskDgParamMaps": [],
+    "idpConfigurations": [],
+    "sentences": [],
+    "koraResponses": [],
+    "customTemplates": [],
+    "mlParams": [
+        {
+            "intentParams": {
+                "type": "V3",
+                "minngram": 1,
+                "maxngram": 4,
+                "ngram": [
+                    1,
+                    1
+                ],
+                "useSynonyms": false,
+                "f_negation": false,
+                "useStopwords": false,
+                "usePlaceholders": true,
+                "useTestPlaceholders": false
+            },
+            "nerParams": {
+                "type": "corenlp"
+            },
+            "intentData": {
+                "stopwords": "a about above abst accordance according accordingly across act actually adj  affected affecting affects afterwards again against ah all almost alone along  already also although always am among amongst an and announce another any anybody anyhow  anymore anyone anything anyway anyways anywhere apparently approximately are aren arent  arise around as aside ask asking at auth away awfully  b back be became because become becomes becoming been before beforehand begin beginning  beginnings begins behind being believe below beside besides between beyond biol both brief  briefly but by  c ca came cause causes certain certainly co com come comes contain  containing contains could couldnt  d did didn't different do does doesn't doing done don't down downwards during  e each ed edu effect eg either else elsewhere end ending enough especially  et et-al etc even ever every everybody everyone everything everywhere ex except  f far few ff fix followed following follows for former formerly forth  found from further furthermore  g gave get gets give given gives giving goes gone got gotten  h had happens hardly has hasn't haven't he hed hello hence her here hereafter hereby  herein heres hereupon hers herself hes hi hid him himself his hither home how howbeit however  i ie if i'll im immediate immediately importance important in inc indeed index information  instead into invention inward is isn't it itd it'll its itself i've 'm  j just  k keep keeps kept kg km know known knows  l largely last lately later latter latterly least less lest let lets like liked likely  line little 'll ltd  m made mainly make makes many may maybe me mean means meantime meanwhile merely mg  might miss ml more moreover most mostly mr mrs much mug must my myself  n na namely nay nd near nearly necessarily necessary needs neither never  nevertheless new next no nobody non none nonetheless noone nor normally  nos noted nothing now nowhere  o obtain obtained obviously of off often oh ok okay old omitted on once one ones only onto  or ord other others otherwise ought our ours ourselves over overall owing own  p page pages part particular particularly past per perhaps placed please plus poorly  possible possibly pp present previously primarily probably  promptly proud provides put q que quickly quite qv r ran rather rd re readily really  recent recently ref refs regarding regardless regards related relatively research  respectively resulted resulting results right run  s said same saw say saying says sec section see seeing seem seemed seeming seems seen  self selves sent seven several shall she shed she'll shes should shouldn't show showed  shown showns shows significant significantly similar similarly since slightly so some  somebody somehow someone somethan something sometime sometimes somewhat somewhere soon  sorry specifically specified specify specifying still stop strongly sub substantially  successfully such sufficiently sup sure  t take taken taking tell tends th than thank thanks thanx that that'll thats that've  the their theirs them themselves then thence there thereafter thereby thered therefore  therein there'll thereof therere theres thereto thereupon there've these they theyd they'll  theyre they've think this those thou though thoughh thousand throug through throughout  thru thus til tip to together too took toward towards tried tries truly try trying ts  twice u un under unfortunately unless unlike unlikely until unto up upon ups us use used useful  usefully usefulness uses using usually  v value various 've very via viz vol vols vs  w want wants was wasnt way we wed welcome we'll went were werent we've what whatever  what'll whats when whence whenever where whereafter whereas whereby wherein wheres  whereupon wherever whether which while whim whither who whod whoever whole who'll whom  whomever whos whose why widely willing wish with within without wont words world would  wouldnt www x y yes yet you youd you'll your youre yours yourself yourselves you've  z zero hey hello howdy bro good morning afternoon noon night bye thanks yeah yo no kk"
+            },
+            "language": "en",
+            "state": "configured"
+        }
+    ],
+    "contentVariables": [],
+    "exportOptions": {
+        "tasks": [
+            "botTask",
+            "knowledgeGraph"
+        ],
+        "nlpData": [
+            "nlpSettings",
+            "utterances",
+            "standardResponses"
+        ],
+        "settings": [
+            "botSettings",
+            "botVariables",
+            "ivrSettings"
+        ]
+    },
+    "traits": []
+}
